@@ -1,0 +1,805 @@
+.wb-footer {
+    background: $wb-footer-bg;
+    padding: 6rem 0;
+
+    &.nps-footer{
+
+        background: unset;
+        padding: unset;
+
+        .footer-bottom-wrapper{
+            padding:0px 25px;
+            .footerlogo{
+                margin: 20px auto 5px auto;
+                max-width: 1360px;
+                img{
+                    width:78px;
+                    height: 18px;
+                }
+            }
+
+            .copyright{
+                max-width: 1360px;
+                margin: 5px auto 20px auto;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                opacity: 0.7;
+                color:#fff;
+
+                // font-family: $pfhandbookpro-regular; later
+            }
+        }
+
+    }
+
+
+    @include for-phone {
+        padding: 2rem 0 4rem;
+    }
+    .foot-link-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid $wb-foot-border;
+        @include for-phone {
+            margin: 0 -15px;
+            border-bottom: 0;
+        }
+        &__col {
+            width: 25%;
+            @include for-tablet {
+                width: 50%;
+            }
+            @include for-phone {
+                width: 100%;
+            }
+        }
+    }
+    .img-link-block {
+        display: flex;
+        &__img {
+            max-width: 5.5rem;
+            height: 3.6rem;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.footer-bottom-wrapper {
+  a {
+    color: #ffffff;
+  }
+}
+
+.footer-container__links {
+
+  .lcol {
+    ul {
+      list-style-type: none;
+
+    }
+
+
+  }
+
+}
+
+.foot-link-set {
+    padding-right: 5rem;
+    img{
+        width: 13rem;
+        // height: 13rem;
+        height: auto;
+        aspect-ratio: 1/1;
+        margin-bottom: 2rem;
+    }
+    @include for-phone {
+        border-bottom: 1px solid $wb-foot-border;
+        padding: 0 15px;
+    }
+    &__title-link {
+        // font-family: $pfencoresanspro-bold; later
+        font-size: $font18;
+        line-height: $line-height-26;
+        color: $wb-footer-title;
+        margin-bottom: 0.8rem;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $wb-foot-link-hover;
+        }
+        .icon {
+            display: none;
+        }
+        @include for-phone {
+            font-size: $font16;
+            line-height: $line-height-20;
+            padding: 2rem 3.5rem 2rem 0;
+            margin-bottom: 0;
+            position: relative;
+            br {
+                display: none;
+            }
+            .icon {
+                display: block;
+                position: absolute;
+                right: 0rem;
+                top: 1.2rem;
+                font-family: font-icons;
+                font-size: $font14;
+                width: 3rem;
+                height: 3rem;
+                line-height: $line-height-30;
+                text-align: center;
+                z-index: 1;
+                transition: transform 0.3s ease-out;
+            }
+        }
+    }
+    &--active {
+        .foot-link-set__title-link {
+            @include for-phone {
+                .icon {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &__sub-title {
+        // font-family: $pfencoresanspro-bold; later
+        font-size: $font14;
+        line-height: $line-height-22;
+        color: $wb-foot-subtitle;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__link {
+        // font-family: $pfencoresanspro-book; later
+        font-size: $font14;
+        line-height: $line-height-26;
+        color: $wb-footer-title;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &--bold {
+            // font-family: $pfencoresanspro-bold; later
+            line-height: $line-height-22;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            color: $wb-foot-link-hover;
+        }
+    }
+    &__list {
+        padding-left: 0;
+        margin-bottom: 4rem;
+        &--sub {
+            margin-bottom: 2rem;
+        }
+        @include for-phone {
+            margin-bottom: 2rem;
+        }
+        &--social {
+            display: flex;
+            justify-content: flex-start;
+            .foot-link-set__item {
+                margin-right: 1.2rem;
+                @include for-phone {
+                    margin-right: 4rem;
+                }
+                &::last-child {
+                    @include for-phone {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .foot-link-set__icon {
+                font-size: $font22;
+                color: $wb-footer-title;
+                @include for-phone {
+                    font-size: $font28;
+                }
+            }
+        }
+        &--tax {
+            max-width: 21rem;
+            @include for-phone {
+                max-width: 100%;
+            }
+            .foot-link-set__item {
+                padding: 1.8rem 0;
+                border-bottom: 1px solid $wb-foot-border;
+                &:first-child {
+                    padding-top: 0;
+                }
+                &:last-child {
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                }
+            }
+            .foot-link-set__link {
+                line-height: 2.1rem;
+                white-space: normal;
+            }
+        }
+    }
+    &__cont {
+        @include for-phone {
+            display: none;
+        }
+    }
+}
+
+.aware-block {
+    padding: 2rem 0;
+    border-bottom: 1px solid $wb-foot-border;
+    margin-bottom: 3rem;
+    &__title {
+        // font-family: $pfencoresanspro-bold; later
+        font-size: $font18;
+        line-height: $line-height-26;
+        color: $wb-footer-title;
+        margin-bottom: 0.8rem;
+        font-weight: 600;
+    }
+    &__desc {
+        // font-family: $pfencoresanspro-book; later
+        font-size: $font14;
+        line-height: $line-height-20;
+        color: $wb-footer-title;
+        margin: 0;
+    }
+}
+
+.reg-office {
+    padding: 2rem 0;
+    border-bottom: 1px solid $wb-foot-border;
+    @include for-phone {
+        border-top: 1px solid $wb-foot-border;
+    }
+    &__title {
+        // font-family: $pfencoresanspro-bold; later
+        font-size: $font14;
+        line-height: $line-height-22;
+        color: $wb-footer-title;
+        display: block;
+        margin-bottom: 2rem;
+        &:nth-child(2) {
+            margin-bottom: 0.8rem;
+        }
+    }
+    &__desc {
+        // font-family: $pfencoresanspro-book; later
+        font-size: $font14;
+        line-height: $line-height-20;
+        color: $wb-footer-title;
+        margin-bottom: 2rem;
+    }
+}
+
+.foot-link-socialset {
+    @include for-phone {
+        padding: 0 15px;
+    }
+}
+
+.reg-office__desc{
+
+    a{
+        color: #cdcece;
+        text-decoration: none;
+    }
+
+
+
+}
+
+
+/*-----Footer <start>------*/
+footer {
+    .footer-bottom-wrapper {
+      width: 100%;
+      float: left;
+    }
+    .footer-logo {
+      float: left;
+      margin-right: 10px;
+      img {
+        max-width: 130px;
+        height: auto;
+      }
+      a {
+        border-bottom: none;
+      }
+    }
+  
+    .upper-div {
+      float: left;
+      width: 100%;
+      padding: 40px 0;
+      border-bottom: 1px solid $footer-links-icon-divider;
+      &:hover {
+        border-bottom: 1px solid $footer-links-icon-divider !important;
+      }
+      @include mQ(1020px) {
+        border-bottom: none;
+      }
+      .lcol:nth-child(n + 6) {
+        margin-top: 12px;
+      }
+      @include for-lg-desktop {
+        .lcol:nth-child(n + 7) {
+          margin-top: 12px;
+        }
+      }
+  
+      @include for-md-desktop {
+        .lcol:nth-child(n + 6) {
+          margin-top: 12px;
+        }
+      }
+      .lcol {
+        flex-direction: row;
+  
+        display: block;
+  
+        width: 17%;
+        padding-left: 0;
+        ul {
+          li {
+            a {
+              font-size: 1.4rem;
+              @include mQ(1300px) {
+                font-size: $font13;
+              }
+              &:hover {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+  
+      ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+          margin-top: 12px;
+          padding: 0;
+          &:first-child {
+            margin-top: 0;
+          }
+          &:before {
+            display: none;
+          }
+  
+          a {
+            color: $white;
+            // font-family: $pfhandbookpro-regular; later
+            font-size: 1.6rem;
+            line-height: 24px;
+            &:hover,
+            &:active,
+            &:focus {
+              border-bottom-color: $white;
+            }
+          }
+        }
+        & + ul {
+          margin-top: 12px;
+        }
+      }
+  
+      @include mQ(767px) {
+        padding: 32px 0 0px 0;
+      }
+    }
+  
+    .lower-div {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      clear: both;
+      padding: 32px 0 22px 0;
+      @include mQ(767px) {
+        display: block;
+        float: left;
+      }
+      .copyright {
+        span{
+          font-size: 1.4rem;
+        }
+        p {
+          color: $white;
+        //   font-family: $pfhandbookpro-regular;
+          font-size: 1.6rem;
+          line-height: 24px;
+          @include mQ(1020px, 768px) {
+            margin-bottom: 0;
+          }
+        }
+      }
+  
+      .socialicons {
+        ul {
+          padding-left: 0;
+          margin-bottom: 0;
+          float: right;
+          li {
+            display: inline-block;
+            padding: 0 8px;
+  
+            &:before {
+              display: none;
+            }
+  
+            a {
+              color: $white;
+              &:hover,
+              &:active,
+              &:focus {
+                border-bottom: none;
+              }
+              img {
+              }
+              .icon {
+                color: $white;
+                font-size: 2.2rem;
+              }
+            }
+          }
+          @include mQ(767px) {
+            display: none;
+          }
+        }
+        @include mQ(1020px) {
+          display: none;
+        }
+        @include mQ(767px) {
+          display: block;
+        }
+      }
+      @include mQ(1020px, 768px) {
+        justify-content: center;
+        padding: 38px 0 33px 0;
+      }
+      @include mQ(767px) {
+        padding: 20px 0 20px 0;
+      }
+    }
+  
+    .contacttext {
+      float: left;
+      margin-right: 32px;
+      color: $white;
+      display: flex;
+      .caption {
+        color: $white;
+        font-size: 1.6rem;
+        line-height: 24px;
+        @include for-phone{
+          font-size: 1.4rem;
+        }
+        // font-family: $pfhandbookpro-regular;
+      }
+      .icon {
+        font-size: 2.2rem;
+        margin: 0 8px;
+      }
+    }
+  }
+  .dark-grey-bg {
+    background-color: $dark-grey;
+  }
+  
+  @include mQ(1020px) {
+    footer {
+      .lcol {
+        display: none;
+      }
+    }
+  }
+  @include mQ(1020px, 768px) {
+    footer {
+      .upper-div {
+        width: 25%;
+      }
+      .lower-div {
+        width: 75%;
+        display: block;
+        clear: none;
+        float: left;
+        .socialicons {
+          display: block;
+          margin-top: 10px;
+          ul {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  //footer - container
+  .footer-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    &__links {
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-left: 65px;
+      @include mQ(1300px) {
+        margin-left: 30px;
+      }
+      @include for-tablet {
+        display: none;
+      }
+    }
+  }
+  
+  /*-----Footer <end>------*/
+  
+  /*
+   * Footer Category
+   *
+   */
+  
+  .light-white-grey-bg {
+    background-color: $light-white-grey;
+  }
+  .footer-category-wrapper {
+    float: left;
+    width: 100%;
+  
+    @include mQ(767px) {
+      background-color: #ffffff;
+      border-top: 1px solid #dddddd;
+    }
+  
+    .category-title {
+      font-size: 2.4rem;
+    //   font-family: $pfhandbookpro-bold;
+      color: $capital-red;
+      @include mQ(1399px) {
+        font-size: 2rem;
+      }
+      @include mQ(767px) {
+        padding-top: 16px;
+        padding-bottom: 15px;
+        //display: none;
+  
+        &:after {
+          content: $icon-right-arrow;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          font-family: "font-icons";
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          line-height: 1;
+          speak: none;
+          text-transform: none;
+          font-size: 1.8rem;
+          position: absolute;
+          right: 32px;
+        }
+      }
+    }
+    .category-title-link {
+      display: inline-block;
+      margin-bottom: 38px;
+      @include mQ(1399px) {
+        margin-bottom: 18px;
+      }
+      @include mQ(767px) {
+        margin-bottom: 0;
+        display: block;
+        &.active {
+          .category-title {
+            &:after {
+              transform: rotate(-90deg);
+            }
+            &:before {
+              content: none;
+            }
+          }
+        }
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        border-bottom: none;
+      }
+    }
+    .category-subtitle {
+      margin-bottom: 17px;
+      a {
+        font-size: 1.8rem;
+        line-height: 20px;
+        // font-family: $pfhandbookpro-bold;
+        color: $capital-red;
+      }
+      @include mQ(1399px) {
+        margin-bottom: 13px;
+        a {
+          font-size: 1.5rem;
+        }
+      }
+      @include mQ(1020px) {
+        margin-bottom: 10px;
+      }
+    }
+  
+    .category-content-item {
+      ul {
+        padding-left: 0;
+        li {
+          margin-bottom: 20px;
+          padding-bottom: 0px;
+          padding-top: 0px;
+          margin-right: 24px;
+          a {
+            font-size: 1.6rem;
+            line-height: 20px;
+            // font-family: $pfhandbookpro-regular;
+            color: $black;
+  
+            &:hover,
+            &:active,
+            &:focus {
+              color: $black;
+              border-bottom-color: $black;
+            }
+          }
+          &::before {
+            display: none;
+          }
+  
+          @include mQ(1399px) {
+            margin-bottom: 10px;
+            a {
+              font-size: 1.3rem;
+              line-height: 17px;
+            }
+          }
+        }
+      }
+    }
+  
+    .category-content-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 37px 0 33px 0;
+      @include mQ(1399px) {
+        margin: 32px 0 30px 0;
+      }
+      @include mQ(1020px) {
+        margin: 17px 0 15px 0;
+      }
+  
+      @include mQ(767px) {
+        display: block;
+        margin: 0px;
+      }
+    }
+    .category-content {
+      display: flex;
+      flex-wrap: nowrap;
+      @include mQ(1020px) {
+        display: block;
+      }
+      @include mQ(767px) {
+        display: none;
+        margin-top: 12px;
+      }
+    }
+    .category-wrapper {
+      border-left: 1px solid #d8d8d8;
+      padding-left: 41px;
+      margin-left: 71px;
+      &.no-archive-section {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+      }
+      .category-content-item {
+        margin-right: 54px;
+        max-width: 195px;
+        &:last-child {
+          margin-right: 0px;
+        }
+        ul {
+          li {
+            margin-right: 0;
+          }
+          @include mQ(1020px) {
+            display: none;
+          }
+        }
+      }
+  
+      @include mQ(1199px) {
+        padding-left: 31px;
+        margin-left: 11px;
+        .category-content-item {
+          margin-right: 22px;
+        }
+      }
+  
+      @include mQ(1020px) {
+        width: 55%;
+      }
+  
+      @include mQ(767px) {
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        border-left: none;
+        margin-bottom: 25px;
+  
+        .category-title-link {
+          &:before {
+            content: "";
+            background-color: #dddddd;
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            //margin-top: 35px;
+          }
+        }
+      }
+    }
+    .category-archive-wrapper {
+      .category-content-item {
+        ul {
+          columns: 2;
+        }
+      }
+      @include mQ(1020px) {
+        flex: 1 0 45%;
+      }
+      @include mQ(767px) {
+        .category-title {
+          &:before {
+            //content: "";
+            background-color: #dddddd;
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-top: 35px;
+          }
+        }
+      }
+    }
+  }
+  .show-older-link {
+    // font-family: $pfhandbookpro-bold !important;
+    border-bottom: 1px solid !important;
+  }
+
+  .brand-dark-grey{
+    background: #6c7174;
+  }
+  
+  .foot-link-set__title{
+
+    p{
+      color: #cdcece;
+      font-size: 1.8rem;
+    }
+
+  }

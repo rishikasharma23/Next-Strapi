@@ -1,0 +1,89 @@
+.breadcrum-comp a{
+    color:#6c7174;
+    text-decoration: none;
+}
+
+.breadcrum-comp__link{
+    font-size: 0.87em;
+    font-family: PF Handbook Pro;
+}
+
+.breadcrum-comp a::after{
+    content: '>';
+    padding-left: 0.3rem;
+    padding-right: 0.7rem;
+}
+
+
+.breadcrum-comp a:hover, .breadcrum-comp a:hover::after {
+    color: #c7222a; 
+}
+
+li{
+    font-size: 0.9rem;
+    font-family: PF Handbook Pro;
+}
+
+.card-div:hover .card-title
+{
+    color: #c7222a;
+}
+
+.card-shadow {
+    box-shadow: 0 0 14px 0 rgba(106,71,66,.24)
+}
+
+.article-list:hover {
+    cursor: pointer;
+}
+
+.media-tile__like-icon{
+    color: #6c7174;
+}
+
+.media-tile__likes-count{
+    color: #6c7174;
+}
+
+@media (max-width: 400px) 
+{
+   .card-body{
+    padding: 0 4% !important;
+    height: fit-content;
+   }
+
+   .media-tile__like-icon{
+    font-size: 0.75rem;
+    }
+
+    .media-tile__likes-count{
+    font-size: 0.75rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .card-div
+    {
+        width:100%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card-div{
+        width: 48.9%;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-div {
+        width: 32.4% !important;
+        height: auto;
+    }
+
+    .card-title {
+        height: 3rem;
+    }
+}
+

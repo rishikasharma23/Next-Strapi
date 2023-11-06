@@ -1,0 +1,351 @@
+/*
+ *  Font-smoothing 
+ *
+ */
+
+ @mixin font-smoothing {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /*
+   *  Font-face Based on http://codepen.io/javasteve99/pen/hDxpn
+   *
+   */
+  
+  @mixin font-face(
+    $font-family,
+    $file-path,
+    $font-weight: normal,
+    $font-style: normal
+  ) {
+    @font-face {
+      font-family: $font-family;
+      src: url("#{$file-path}-eot.eot");
+      src: url("#{$file-path}-eot.eot?#iefix") format("embedded-opentype"),
+        url("#{$file-path}-woff2.woff2") format("woff2"),
+        url("#{$file-path}-woff.woff") format("woff"),
+        url("#{$file-path}-svg.svg##{$font-family}") format("svg");
+      font-weight: $font-weight;
+      font-style: $font-style;
+      font-display: swap;
+    }
+  
+    // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      @font-face {
+        font-family: $font-family;
+        src: url("#{$file-path}-svg.svg##{$font-family}") format("svg");
+      }
+    }
+  }
+  
+  @mixin clearfix() {
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+  
+  /*
+   *  MediaQuery
+   *
+   */
+  
+  @mixin mQ($args...) {
+    @if length($args) == 1 {
+      @media screen and (max-width: nth($args, 1)) {
+        @content;
+      }
+    }
+    @if length($args) == 2 {
+      @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)) {
+        @content;
+      }
+    }
+    @if length($args) == 3 {
+      @media screen and (min-width: nth($args, 2)) {
+        @content;
+      }
+    }
+  }
+  
+  @mixin mQmin($args...) {
+    @if length($args) == 1 {
+      @media screen and (min-width: nth($args, 1)) {
+        @content;
+      }
+    }
+  }
+  /*
+  *  linear Gradient
+  *
+  */
+  
+  @mixin linearGradient($top, $bottom) {
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top, $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, $top),
+      color-stop(100%, $bottom)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+      top,
+      $top 0%,
+      $bottom 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, $top 0%, $bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $top 0%, $bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom, $top 0%, $bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  }
+  
+  @mixin linearGradientHalf($top, $bottom) {
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top, $top -50%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(-50%, $top),
+      color-stop(100%, $bottom)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+      top,
+      $top -50%,
+      $bottom 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+      top,
+      $top -50%,
+      $bottom 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $top -50%, $bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom, $top -50%, $bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  }
+  
+  /*
+  *  Box shadow
+  *
+  */
+  
+  @mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+    box-shadow: $x-axis $y-axis $blur $color;
+  }
+  
+  /*
+  *  Blur
+  *
+  */
+  @mixin blur($radius) {
+    filter: blur($radius + px);
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="#{$radius}" /></filter></svg>#blur'); /* Firefox, Safari, Chrome*/
+    filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius); /* IE9 */
+    -webkit-filter: blur($radius + px); /* Chrome, Safari */
+    -ms-filter: blur($radius + px); /* IE */
+    -o-filter: blur($radius + px); /* Opera */
+    -moz-filter: blur($radius + px); /* Mozilla */
+  }
+  
+  //Media Query
+  
+  // Large devices
+  @mixin for-lg-desktop {
+    @media (max-width: $lg) {
+      @content;
+    }
+  }
+  // Medium devices
+  @mixin for-md-desktop {
+    @media (max-width: $md) {
+      @content;
+    }
+  }
+  // Small devices
+  @mixin for-tablet {
+    @media (max-width: $sm) {
+      @content;
+    }
+  }
+  // Small devices
+  @mixin for-phone {
+    @media (max-width: $xs) {
+      @content;
+    }
+  }
+  // For Small device ( below 576px)
+  @mixin for-small-phone {
+    @media (max-width: $xxs) {
+      @content;
+    }
+  }
+  
+  //Mixin for Link
+  @mixin link($link, $visit, $hover, $active) {
+    a {
+      color: $link;
+      &:visited {
+        color: $visit;
+        border: none;
+      }
+      &:hover {
+        color: $hover;
+        border: none;
+      }
+      &:active {
+        color: $active;
+        border: none;
+      }
+    }
+  }
+  //example - @include link(#00c, #0cc, #c0c, #ccc, #cc0);
+  
+  //Mixin for Link with iCon
+  @mixin link-icon(
+    $link,
+    $visit,
+    $hover,
+    $active,
+    $icon-color,
+    $icon-hover-color,
+    $icon-name,
+    $icon-size
+  ) {
+    a {
+      color: $link;
+      display: block;
+      position: relative;
+      &:visited {
+        color: $visit;
+        border: none;
+      }
+      &:hover {
+        color: $hover;
+        border: none;
+        &:after {
+          color: $icon-hover-color;
+        }
+      }
+      &:active {
+        color: $active;
+        border: none;
+      }
+      &:after {
+        content: $icon-name;
+        font-family: "font-icons";
+        color: $icon-color;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 1;
+        text-transform: none;
+        position: absolute;
+        font-size: $icon-size;
+      }
+    }
+  }
+  //example - @include link-icon(#00c, #0cc, #c0c, #ccc, #cc0, icon-right-arrow);
+  
+  /*
+   * ABC Post Login - Implementation of themes
+   *
+   */
+  
+   // Parent level theme Class Name
+   @mixin themify($themes) {
+    @each $theme, $map in $themes {
+      .theme-#{$theme} & {
+        $theme-map: () !global;
+        @each $key, $submap in $map {
+          $value: map-get(map-get($themes, $theme), '#{$key}');
+          $theme-map: map-merge($theme-map, ($key: $value)) !global;
+        }
+        @content;
+        $theme-map: null !global;
+      }
+    }
+  }
+  
+  // Same level theme Class Name
+  @mixin themifySelf($themes) {
+    @each $theme, $map in $themes {
+      &.theme-#{$theme} {
+        $theme-map: () !global;
+        @each $key, $submap in $map {
+          $value: map-get(map-get($themes, $theme), '#{$key}');
+          $theme-map: map-merge($theme-map, ($key: $value)) !global;
+        }
+        @content;
+        $theme-map: null !global;
+      }
+    }
+  }
+  
+  @function themed($key) {
+    @return map-get($theme-map, $key);
+  }
+  
+  // example: @include themify($themes) { color: themed('textColor');  background-color: themed('backgroundColor');  }
+  
+  
+  // Font Scaling
+  @mixin fontScaling($property,$val,$important: null) {
+    @media screen and (min-width: $custom-screen-max-width) {
+      @if $important {
+        #{$property}: calc(#{$custom-max-width-number} / #{$custom-screen-width-number} * #{$val}rem) #{$important};
+      } @else {
+        #{$property}: calc(#{$custom-max-width-number} / #{$custom-screen-width-number} * #{$val}rem);
+      }
+    }
+    @media screen and (min-width: $custom-min-width) and (max-width: $custom-max-width) {
+      @if $important {
+        #{$property}: #{$val}vw #{$important};
+      } @else {
+        #{$property}: #{$val}vw;
+      }
+    }
+  }
+  // example: @include fontScaling(font-size,1.4) and @include fontScaling(font-size,1.4,!important)
+  
+  
+  // Font Scaling ABC
+  @mixin fontScale($property,$minval,$maxval,$minvw,$maxvw,$important: null) {
+    @if $important {
+      #{$property}: calc(#{$minval}px + (#{$maxval} - #{$minval}) * (100vw - #{$minvw}px ) / (#{$maxvw} - #{$minvw})) #{$important};
+    }
+    @else {
+      #{$property}: calc(#{$minval}px + (#{$maxval} - #{$minval}) * (100vw - #{$minvw}px ) / (#{$maxvw} - #{$minvw}));
+    }
+  }
+  
+  
+  
+  // Scroll bar - Custom 
+  @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $background-color;
+    }
+  
+    // For Internet Explorer
+    & {
+      scrollbar-face-color: $foreground-color;
+      scrollbar-track-color: $background-color;
+    }
+  }
+  
+  // example: @include scrollbars(.5em, slategray); @include scrollbars(10px, pink, red);

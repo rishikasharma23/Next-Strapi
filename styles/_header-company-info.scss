@@ -1,0 +1,51 @@
+.company-info {
+    padding: 0 4.8rem 0 4.6rem;
+    // max-width: 1400px;
+  
+    &.nps-company-info{
+      padding: 0px;
+      @include for-tablet{
+        padding: 0px 25px;
+      }
+      .company-info__desc{
+        max-width: 1360px;
+        margin:auto;
+        padding: 4px 25px;
+        font-size: 1.8rem;
+        font-weight: $fontWt500;
+        @include for-tablet{
+          padding:4px 0px;
+        }
+        
+      }
+    }
+  
+    &.brand-capital-brown-bg{
+  
+      background-color: $brand-NPS-brown;
+    }
+  
+    @include for-tablet {
+      padding: 0 1.5rem;
+    }
+  
+    @include mQ(1200px) {
+      padding: 0 4.8rem 0 2.6rem;
+    }
+  
+    @include mQ(1020px) {
+      padding: 0 1.5rem;
+    }
+  
+    &__desc {
+      color: $company-color;
+      font-size: $font20;
+      line-height: $line-height-24;
+      font-weight: $fontWt500;
+  
+      @include for-phone {
+        font-size: $font18;
+      }
+    }
+  }
+  

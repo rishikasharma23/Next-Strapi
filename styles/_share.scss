@@ -1,0 +1,88 @@
+//share-menu
+.share-menu {
+    $self: &;
+    position: relative;
+    &__menu {
+        background: $df-bg-color;
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.18);
+        padding: 2rem 1.5rem;
+        transition: all 0.3s ease;
+        width: 22.4rem;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        opacity: 0;
+        visibility: hidden;
+        text-align: left;
+        transform: translate(-50%, 150%);
+        z-index: 2;
+        // @include for-md-desktop {
+        //     display: none;
+        // }
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 1rem 1rem 1rem;
+            border-color: transparent transparent $df-bg-color transparent;
+            position: absolute;
+            left: 50%;
+            top: -1rem;
+            transform: translateX(-50%);
+        }
+    }
+    &__label {
+        font-size: 1.6rem;
+        line-height: $line-height-22;
+        color: $df-text-color;
+        // font-family: $pfhandbookpro-regular;
+        margin-bottom: 1rem;
+    }
+    &__icon {
+        font-size: $font28;
+        color: $df-icon-color !important;
+        display: inline-block;
+        margin-right: 1rem;
+        vertical-align: middle;
+    }
+    &__text {
+        font-size: 1.6rem;
+        line-height: $line-height-22;
+        color: $df-text-color;
+        // font-family: $pfhandbookpro-regular;
+        display: inline-block;
+        vertical-align: middle;
+        transition: all 0.3s ease;
+        text-transform: capitalize;
+    }
+    &__item-link {
+        padding: 1rem 0;
+        &:hover {
+            #{$self}__text {
+                color: $article-social-hover;
+            }
+        }
+    }
+    &__link-wrap {
+        padding: 0;
+    }
+    // &__link-item {
+    //     margin-bottom: 1rem;
+    //     &:last-child {
+    //         margin-bottom: 0;
+    //     }
+    // }
+    &:hover {
+        #{$self}__menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, 105%);
+        }
+        // @include for-md-desktop {
+        //     #{$self}__menu {
+        //         display: none;
+        //     }
+        // }
+    }
+}

@@ -1,0 +1,46 @@
+@import "./global-variables.scss";
+@import "./icons.scss";
+
+.readAloudButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFF1F4;
+    border-radius: 22px;
+    width: fit-content;
+    padding: 5px 12px 5px 10px;
+    cursor: pointer;
+    margin: 16px 0;
+    height: 38px;
+
+    .icon {
+        color: $brand-capital-red;
+        font-size: 22px;
+        margin: 4px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .icon::before {
+        line-height: unset;
+    }
+
+    .readAloudButtonText {
+        color: $brand-capital-red;
+        // font-family: $pfhandbookpro-regular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        margin: 0;
+    }
+    @media screen and (max-width: 400px){
+
+        .icon{
+            font-size: 1.2rem;
+        }
+        .readAloudButtonText{
+            font-size: 0.7rem;
+        }
+    }
+}

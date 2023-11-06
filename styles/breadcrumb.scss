@@ -1,0 +1,76 @@
+// @import "styles/mixins";
+// @import "styles/global-variables";
+// @import "styles/variables";
+
+// @mixin for-tablet {
+//   @media (max-width: $sm) {
+//     @content;
+//   }
+// }
+
+// // Save variable
+// $icon-next: "\EA15";
+
+// // Save mixin
+// @mixin next {
+//   @include icon($icon-next) {
+//     @content;
+//   }
+// }
+
+// // Expose as class
+// .icon-next:before {
+//   content: $icon-next;
+// }
+
+// .breadcrumComp {
+//   &__link {
+//     position: unset !important;
+//     padding-right: 1.0rem !important;
+
+//     &:after {
+//       position: unset !important;
+//       right: unset !important;
+//       padding-left: 0.5rem !important;
+
+//     }
+//   }
+
+
+// }
+
+
+// .breadcrum-comp {
+//   @include for-tablet {
+//     display: block !important;
+//   }
+
+//   &__link {
+//     font-size: $font14;
+//     line-height: $line-height-16;
+//     color: $breadcrum-link-color;
+//     text-transform: capitalize;
+//     position: relative;
+//     padding-right: 2.2rem;
+
+//     &:after {
+//       content: $icon-next;
+//       font-family: font-icons;
+//       position: absolute;
+//       right: 0.5rem;
+//       bottom: 0;
+//       font-size: $font10;
+//     }
+
+//     &:last-child {
+//       color: $breadcrum-active-color;
+//       cursor: default;
+//     }
+
+//     &:last-child {
+//       &:after {
+//         display: none;
+//       }
+//     }
+//   }
+// }

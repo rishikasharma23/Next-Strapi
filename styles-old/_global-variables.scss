@@ -1,0 +1,420 @@
+/*
+ * Media BreakPoint
+ *
+ */
+
+ $lg: 1400px;
+ $md: 1200px;
+ $sm: 1020px;
+ $xs: 767px;
+ $xxs: 576px;
+ $xxl: 1200px;
+ $xxxl: 1680px;
+
+$custom-screen-width: 992px;
+$custom-max-width: 1680px;
+$custom-screen-max-width: 1681px;
+$custom-min-width: 1200px;
+
+$custom-max-width-number: 1680;
+$custom-screen-width-number: 992;
+
+/*
+Font Weight
+*/
+
+$fontWt500: 500;
+
+
+ /*
+  * Font Size
+  *
+  */
+$font150: 15rem;
+ $font110: 11rem;
+ $font98: 9.8rem;
+ $font90: 9rem;
+ $font86: 8.8rem;
+ $font80: 8rem;
+ $font64: 6.4rem;
+ $font60: 6rem;
+ $font70: 7rem;
+ $font56: 5.6rem;
+ $font50: 5rem;
+ $font48: 4.8rem;
+ $font44: 4.4rem;
+ $font38: 3.8rem;
+ $font36: 3.6rem;
+ $font34: 3.4rem;
+ $font32: 3.2rem;
+ $font40: 4rem;
+ $font30: 3rem;
+ $font28: 2.8rem;
+ $font27: 2.7rem;
+ $font26: 2.6rem;
+ $font25: 2.5rem;
+ $font24: 2.4rem;
+ $font23: 2.3rem;
+ $font22: 2.2rem;
+ $font21: 2.1rem;
+ $font20: 2rem;
+ $font19: 1.9rem;
+ $font18: 1.8rem;
+ $font17: 1.7rem;
+ $font16: 1.6rem;
+ $font15: 1.5rem;
+ $font14: 1.4rem;
+ $font13: 1.3rem;
+ $font12: 1.2rem;
+ $font11: 1.1rem;
+ $font10: 1rem;
+ $font9: 0.9rem;
+ $font8: 0.8rem;
+ $font7: 0.7rem;
+ $font6: 0.6rem;
+ $font5: 0.5rem;
+ $font0: 0rem;
+ $fontpx1: 0rem;
+ $fontpx10: 0rem;
+ $fontpx20: 1rem;
+ $fontpx25: 0rem;
+ $footer-p: 1.6rem;
+ $primary-nav-link: 1.6rem;
+ $title-desc: 1.6rem;
+ $content-spacing: 1px;
+ $line-height-dll: 2.8rem;
+ $line-height-sub-title: 2.8rem;
+ 
+ /*
+   * Line Height
+   *
+   */
+ 
+ $line-height-80: 8rem;
+ $line-height-72: 7.2rem;
+ $line-height-64: 6.4rem;
+ $line-height-60: 6rem;
+ $line-height-56: 5.6rem;
+ $line-height-50: 5rem;
+ $line-height-48: 4.8rem;
+ $line-height-46: 4.6rem;
+ $line-height-44: 4.4rem;
+ $line-height-40: 4rem;
+ $line-height-36: 3.6rem;
+ $line-height-34: 3.4rem;
+ $line-height-32: 3.2rem;
+ $line-height-30: 3rem;
+ $line-height-29: 2.9rem;
+ $line-height-28: 2.8rem;
+ $line-height-26: 2.6rem;
+ $line-height-25: 2.5rem;
+ $line-height-24: 2.4rem;
+ $line-height-23: 2.3rem;
+ $line-height-22: 2.2rem;
+ $line-height-20: 2rem;
+ $line-height-18: 1.8rem;
+ $line-height-17: 1.7rem;
+ $line-height-16: 1.6rem;
+ $line-height-14: 1.4rem;
+ $line-height-12: 1.2rem;
+ $line-height-11: 1.1rem;
+ $line-height-10: 1rem;
+ $line-height-9: 0.9rem;
+ $line-height-1-25: 1.25;
+ $line-height-1-1: 1.1; // We cannot add .(dot) to variable. So, if we want to use line height with dot. Use (-) sign.
+ $line-height-1: 1;
+ //px class
+ $px-1: 1px;
+ //Global Variable for Header
+ //Primary Color
+ $brand-capital-red: #c7222a;
+ $brand-support-red: #8b151b;
+ $brand-NPS-brown: #660d0a;
+ $brand-support-yellow: #f7a500;
+ $darkred-shade-1: #9d0a11;
+ //Biz
+ $brand-financing: #d4ae69;
+ $brand-investing: #969f6e;
+ $brand-protecting: #da9089;
+ $brand-advising: #c7222a;
+ //Biz Line Colors
+ $financing: #d4ae69;
+ $financing-shade: #695934;
+ $investing: #969f6e;
+ $investing-shade: #3e593c;
+ $protecting: #da9089;
+ $protecting-shade: #6a4742;
+ //Protecting Colour Palate
+ $protecting-pallete-01: #edc9c6;
+ $protecting-pallete-02: #e2a7a2;
+ $protecting-pallete-03: #da9089;
+ $protecting-pallete-04: #b37671;
+ $protecting-pallete-05: #6a4742;
+ $protecting-pallete-06: #dd968f;
+
+
+ //product landing page
+ $planding-anchor-hover:#8B151B;
+ $exit-intent-innercircle1: #e2e2e2;
+ $exit-intent-circle1: #ffcb00;
+ $planding-anchor-color:#8B151B;
+ $planding-outer-bg: #F7F8FA; 
+ $planding-box-bg:rgba(12, 12, 16, 0.2);
+ $planding-innertxt:rgba(0, 0, 0, 0.74);
+ $planding-outertxt:rgba(0, 0, 0, 0.92);
+ $planding-revised-innertxt: rgba(0, 0, 0, 0.72);
+ $planding-panel:#555;
+ $planding-timeline: rgba(237, 201, 198, 0.32);
+ $planding-revised-timeline: rgba(237, 201, 198, 0.24);
+ $planding-timeline-active:#555555;
+ $planding-timeline2:#F1F1F1;
+ $planding-circle :#902065;
+ $planding-name:rgba(0, 0, 0, 0.52);
+ $planding-card-color:#FFF8F8;
+ $planding-card-color2:rgba(21, 21, 38, 0.08);
+ $planding-tab-color:rgba(12, 12, 16, 0.07);
+ $planding-tab-color2:rgba(12, 12, 16, 0.16);
+ $planding-option-color:rgba(31, 135, 76, 0.08);
+ $planding-star-color: #cdcecd;
+ $planding-box-color: rgba(21, 21, 38, 0.09);
+ $planding-hover-shadow: rgba(21, 21, 38, 0.08);
+ $planding-revisedhomebg-color: rgba(21, 21, 38, 0.12);
+ $planding-gender-color: #1F874C;
+ $planding-error-color: #BD2B2B1A;
+ $planding-ip-color: #FFFFFF;
+ $planding-intent-bg: #e80c25;
+ $planding-leadformerr-color: #BD2B2B;
+ $planding-ourtermplans-boxshadow: 6px 8px 24px rgba(0, 0, 0, 0.09);
+ $planding-cta-boxshadow: 0px 4px 9px rgba(12, 12, 16, 0.2);
+ //ends
+
+ $adb-text-clr: black;
+ $black: #000000;
+
+ //varsity colour codes begin
+
+ $varsity-module-readColor: #1F874C;
+ $varsity-table-bgColor: #DA9089;
+ $varsity-border-color: #CDCECE;
+
+ //end
+
+ //Investing Colour Palate
+ 
+ $investing-pallete-01: #d9dccb;
+ $investing-pallete-02: #c0c5a8;
+ $investing-pallete-03: #969f6e;
+ $investing-pallete-04: #6a7c55;
+ $investing-pallete-05: #3e593c;
+ $investing-pallete-06: #788158;
+ //Financing colour palette
+ $financing-pellete-01: #ecddc0;
+ $financing-pellete-02: #e0c696;
+ $financing-pellete-03: #d4ae69;
+ $financing-pellete-04: #9e834e;
+ $financing-pellete-05: #695934;
+ //Advising Color palette
+ $advising-pelette-01: #ebafb2;
+ $advising-pelette-02: #dd7a7f;
+ $advising-pelette-03: #c7222a;
+ $advising-pelette-04: #95181a;
+ $advising-pelette-05: #8b151b;
+ //Secondary Color
+ $brand-black: #000000;
+ $brand-dark-grey: #6c7174;
+ $brand-light-grey: #cdcece;
+ $brand-white-grey: #f1f3f6;
+ $brand-white: #ffffff;
+ $brand-menu-color: #444749;
+ $transparent: transparent;
+ //Colors
+ $grey: #f1f3f6;
+ $ford-gray: #979797;
+ $raven-gray: #6d7278;
+ $grey-001: #f2f3f4;
+ $grey-002: #f1f3f6;
+ $grey-003: #484848;
+ $grey-004: #999999;
+ $grey-005: #353535;
+ $grey-006: #e5e5e5;
+ $light-green: #00ba32;
+ $grey-light-shade: #eeeeee;
+ $alphagrey: rgba(0, 0, 0, 0.92);
+
+
+ /*
+  * Global Color
+  *
+  */
+ 
+  $capital-red: #c7222a;
+  $dark-red: #8b151b;
+  $capital-dark-red: #660d0a;
+  $green: #a3ab80;
+  $yellow: #d4ae69;
+  $pink: #da9089;
+  
+  $facebookBlue: #3b5998;
+  $twitterBlue: #4099ff;
+  $pink-link: #da9089;
+  $green-link: #969f6e;
+  $yellow-link: #d4ae69;
+  $dark-grey: #6c7174;
+  $light-white-grey: #f9fbfc;
+  $black: #000000;
+  $white: #ffffff;
+  $white-grey: #f1f3f6;
+  $grey: #cccccc;
+  $light-grey: #cccccc;
+  $light-grey-shade: #cdcece;
+  $grey-shade: #f1f3f6;
+  $lighter-grey: #c7c8ca;
+  $lighest-grey: #f4f3f3;
+  $alphablack: rgba(0, 0, 0, 0.9);
+  $darkred-shade-1: #9d0a11;
+  $grey-light-shade: #eeeeee;
+  $error-code: #bd2b2b;
+  $battelship-grey: #6c7174;
+  $orange-yellow: #f7a500;
+
+  
+ //Colors
+ $grey-shade-1: #979797;
+ $grey-shade-2: #f2f3f4;
+ $grey-shade-3:#565F66;
+ $muster: #f7a500;
+ 
+ //Pillar Column
+ $box-background: $grey-shade-2;
+ $box-main-title: $white;
+ $card-background: $white;
+ $card-title-1: $capital-red;
+ $card-title-2: $black;
+ $card-desc: $dark-grey;
+ $card-btn-bg: $white;
+ $card-btn-hover: $white;
+ $card-arrow: $capital-red;
+ $card-qs-arrow: $capital-red;
+ $card-qs-link: $dark-grey;
+ $card-tab-link: $dark-grey;
+ $card-tab-link-active: $white;
+ $card-heading: $black;
+ 
+  
+ //Quick Services
+ $mutualfund: $brand-investing;
+ //Top Menu - Variable
+ $top-menu-color: $brand-white;
+ $top-menu-hover-color: $brand-black;
+ $top-menu-active-color: $brand-black;
+ $top-menu-icon-color: $brand-white;
+ $top-menu-icon-hover-color: $brand-capital-red;
+ $top-menu-link-hover-bg-color: $brand-white-grey;
+ $top-menu-dropdown-bg: $brand-white;
+ $top-menu-dropdown-link: $brand-black;
+ $top-menu-dropdown-box-shadow: $brand-black;
+ $top-menu-protecting: $brand-protecting;
+ $top-menu-investing: $brand-investing;
+ $top-menu-financing: $brand-financing;
+ $top-menu-advicing: $brand-advising;
+ //mobile
+ $top-menu-mobile-color: $brand-menu-color;
+ //Footer
+ $footer-divider-color: $brand-light-grey;
+ // HFL Global Variables
+ $progress-card-primary-color: $financing-shade;
+ $progress-card-accent-color: $financing-shade;
+ $page-title-color: $financing-shade;
+ $page-subtitle-color: $brand-dark-grey;
+ $ir-active-bg-color: $financing-shade;
+ $button-disabled-color: $brand-light-grey;
+ $form-icon-btn-bg: $brand-light-grey;
+ $radio-label-color: $brand-dark-grey;
+ $acc-title-active-bg: $financing;
+ $acc-title-active: $financing-shade;
+ $accordion-header-text-color: $brand-black;
+ $accordion-header-support-color: $brand-dark-grey;
+ $formbtn-disabled-bg: $brand-light-grey;
+ $formbtn-disabled-color: $brand-dark-grey;
+ $upload-btn-bg: $financing-shade;
+ $upload-btn-color: $brand-white;
+ $form-card-border: $brand-black;
+ $form-card-note-color: $brand-dark-grey;
+ $form-card-header-bg: $brand-light-grey;
+ $otp-modal-primary-color: $financing-shade;
+ $hero-section-color: $financing-shade;
+ $hero-card-bg: $financing-shade;
+
+ /*varsity color*/
+ $varsity-border-color: rgba(205, 206, 206, 0.7);
+ 
+ /*
+  * ABC Post Login - Theme definitions
+  *
+  */
+ 
+ $light-investing: #a1ac7b;$recomm-product-title: $protecting-shade;
+ $recomm-investing-color: #2d370c;
+ 
+ $themes: (
+   investing: (
+     backgroundColor: $brand-investing,
+     verticalTabResponsiveBottomSelectedBorder: 3px solid $investing-shade,
+     backgroundColorWithOpacity: rgba($brand-investing, 0.3),
+     backgroundColorWithOpacityForResponsive: #fafbf8,
+     backgroundColorWithOpacityArrow: #d7dac9,
+     contentCardLeftBorderColor: 3px solid $brand-investing,
+     contentCardWithBackgroundOpacity: rgba($brand-investing, 0.3),
+     backgroundColorWithOpacityForLeftVertical: rgba($investing-pallete-01, 0.3),
+     backgroundColorWithOpacityForLeftVerticalResponsive:
+       rgba($brand-investing, 0.21),
+     textColorForLeftMainTitle: $investing-shade,
+     contentHorizontalTabActiveBorder: 3px solid $light-investing,
+     contentHorizontalTabArrowColor: $light-investing,
+     contentHorizontalTabArrowBorder: solid 0.8px $light-investing,
+     brandPillBackgroundColor: rgba($investing-pallete-02, 0.26),
+     recommProductTitle: $recomm-investing-color,
+     recommProductTitleBg: rgba($brand-investing, 0.25),
+     recommfoteNotesBg: rgba($brand-investing, 0.5),
+   ),
+   protecting: (
+     backgroundColor: $brand-protecting,
+     verticalTabResponsiveBottomSelectedBorder: 3px solid $protecting-shade,
+     backgroundColorWithOpacity: rgba($protecting-pallete-02, 1),
+     backgroundColorWithOpacityForResponsive: #fdf9f9,
+     backgroundColorWithOpacityArrow: $protecting-pallete-02,
+     contentCardLeftBorderColor: 3px solid $brand-protecting,
+     contentCardWithBackgroundOpacity: rgba($brand-protecting, 0.3),
+     backgroundColorWithOpacityForLeftVertical: rgba($protecting-pallete-01, 0.4),
+     backgroundColorWithOpacityForLeftVerticalResponsive:
+       rgba($brand-protecting, 0.21),
+     textColorForLeftMainTitle: $protecting-shade,
+     contentHorizontalTabActiveBorder: 3px solid $brand-protecting,
+     contentHorizontalTabArrowColor: $brand-protecting,
+     contentHorizontalTabArrowBorder: solid 0.8px $brand-protecting,
+     brandPillBackgroundColor: rgba($protecting-pallete-02, 0.26),
+     recommProductTitle: $recomm-product-title,
+     recommProductTitleBg: rgba($brand-protecting, 0.25),
+     recommfoteNotesBg: rgba($brand-protecting, 0.5),
+   ),
+   financing: (
+     backgroundColor: $brand-financing,
+     verticalTabResponsiveBottomSelectedBorder: 3px solid $financing-shade,
+     backgroundColorWithOpacity: rgba($brand-financing, 1),
+     backgroundColorWithOpacityForResponsive: #fdfbf7,
+     backgroundColorWithOpacityArrow: $brand-financing,
+     contentCardLeftBorderColor: 3px solid $brand-financing,
+     contentCardWithBackgroundOpacity: rgba($brand-financing, 0.3),
+     backgroundColorWithOpacityForLeftVertical: rgba($financing-pellete-01, 0.5),
+     backgroundColorWithOpacityForLeftVerticalResponsive:
+       rgba($brand-financing, 0.21),
+     textColorForLeftMainTitle: $financing-shade,
+     contentHorizontalTabActiveBorder: 3px solid $brand-financing,
+     contentHorizontalTabArrowColor: $brand-financing,
+     contentHorizontalTabArrowBorder: solid 0.8px $brand-financing,
+     brandPillBackgroundColor: rgba($financing-pellete-02, 0.26),
+     recommProductTitle: $recomm-product-title,
+     recommProductTitleBg: rgba($brand-financing, 0.25),
+     recommfoteNotesBg: rgba($brand-financing, 0.5),
+   ),
+ );

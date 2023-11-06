@@ -1,0 +1,894 @@
+//Custom Grid breakpoints
+//Blog block
+$blog-block-bg: $grey-001;
+$blog-block-left-article: $black;
+$blog-block-shadow: $black;
+$blog-block-date: $black;
+$blog-block-badge-text: $white;
+$blog-block-cart-title: $black;
+$blog-block-card-bg: $white;
+//Big CTA
+$big-cta-color: $white;
+$big-cta-icon-color: $white;
+//Promotion Text
+$promotion-title: $white;
+$promotion-cta: $white;
+$promotion-cta-icon-color: $white;
+$promotion-cta-icon-font: $font15;
+//Promotion CTA Component
+$promotion-cta-title: $white;
+$promotion-cta-link: $white;
+//Form Elements
+$form-label: $black;
+$form-input: $black;
+$form-input-bg: $white;
+$form-input-border: $light-grey;
+$form-input-focus-shadow: $light-grey;
+$form-input-focus-border: $dark-grey;
+$form-input-shadow: $light-grey;
+$form-select-option-hover: $white-grey;
+//addon-group
+$form-button-group-color: $white;
+$form-button-group-icon: $white;
+$form-button-group-action: $white;
+//Quick Services -- Mutual Fund
+$mutualfund-button-bg: $green-link;
+$mutualfund-button-color: $white;
+$mutualfund-button-border: $green-link;
+$mutalfund-button-inverse-color: $green-link;
+//Quick Services -- Finance Button
+$fin-button-bg: $financing;
+$fin-button-color: $white;
+//Quick Services -- Life Insurance
+$lifeinsurance-button-bg: $brand-protecting;
+$lifeinsurance-button-color: $white;
+$lifeinsurance-button-border: $brand-protecting;
+$lifeinsurance-button-inverse-color: $brand-protecting;
+//Calendar
+$calendar-active: $brand-capital-red;
+$calender-border: $lighest-grey;
+//Quick - services Table
+$heading-bg: $grey-shade-1;
+$heading-border: $light-grey;
+$heading-color: $white;
+//Quick Services - Account Statement
+$success-message: $dark-grey;
+//Quick Services - Note
+$qs-note: $dark-grey;
+//Quick Services - LI - Pay Due Premium
+$paypremium-details: $dark-grey;
+$paypremium-total: $white;
+$paypremium-step-2-info: $black;
+//Elements - Button
+//Primary Button -- RED
+$button-primary-font-size: $font24;
+$button-primary-icon-size: $font18;
+$button-primary-color: $white;
+$button-primary-background-color: $capital-red;
+$button-primary-active-color: $dark-red;
+//Secondary Button
+$button-secondary-font-size: $font24;
+$button-secondary-icon-size: $font18;
+$button-secondary-color: $white;
+$button-secondary-active-color: $capital-red;
+$button-secondary-border-color: $white;
+$button-secondary-hover-border-color: $capital-red;
+//Secondary Button -- Capital-red
+$button-capital-red-bg: $capital-red;
+$button-capital-red-hover: $dark-red;
+//Component - Link Block Component
+$lb-link-color: $black;
+$lb-icon-size: $font18;
+$lb-icon-color: $black;
+$lb-icon-hover-color: $capital-red;
+$lb-border-color: $grey;
+$lb-border-size: 1px;
+//Component - Link Column Component
+$brand-title-color: $white;
+$lc-link-color: $black;
+$lc-icon-size: $font18;
+$lc-icon-color: $black;
+$lc-icon-hover-color: $capital-red;
+$lc-border-color: $grey;
+$lc-border-size: $px-1;
+//Back to top
+$backtotop-bg: $capital-red;
+$backtoptop-icon: $white;
+//Component - Piller Tile
+$pillar-tile-background: $grey;
+$pillar-tile-block-background: $white;
+$pillar-tile-brand-title-color: $white;
+$pl-link-color: $black;
+$pl-icon-size: $font12;
+$pl-icon-color: $black;
+$pl-icon-hover-color: $capital-red;
+$pl-border-color: $grey;
+$pl-border-size: $px-1;
+//Component - Pillar Tile V2
+$pillar-tile-click-icon-color: $white;
+$pillar-tile-click-icon-size: $font12;
+//Component - Utility Links
+$utility-links-icon-color: $white;
+$utility-links-color: $white;
+$utility-links-hover-border-color: $white;
+$utility-links-logged-in-background: $dark-red;
+$utility-links-logged-in-border: $white;
+$utility-links-logged-in-hover-border: $orange-yellow;
+$utility-links-logged-in-dropdown-shadow: $black;
+$utility-icon-arrow-color: $white;
+$utility-links-dropdown-border: $light-grey-shade;
+$utility-links-mobile-icon-left-border: $white;
+//Banner
+$banner-title: $white;
+//banner v2
+$banner-v2-title: $white;
+$banner-v2-label: $white;
+//Banner V6
+$banner-6-title: $white;
+$banner-6-role: $white;
+//Footer
+$footer-links-icon-divider: $light-grey-shade;
+//Component Introduction Tile
+$intro-tile-background: $white-grey;
+$intro-tile-content-background: $white;
+$intro-tile-title-color: $black;
+$intro-tile-desc-color: $battelship-grey;
+//Component Media Tile
+$media-tile-background: $white-grey;
+$media-tile-title: $black;
+$media-tile-title-hover: $capital-red;
+$media-tile-desc: $battelship-grey;
+$media-tile-icon: $black;
+$media-tile-icon-hover: $capital-red;
+$media-tile-icon-size: $font16;
+//Component Text Tile
+$text-tile-container-background: $white-grey;
+$text-tile-background: $white;
+$text-tile-title: $black;
+$text-tile-title-hover: $capital-red;
+$text-tile-desc: $battelship-grey;
+$text-tile-icon: $black;
+$text-tile-icon-hover: $capital-red;
+$text-tile-owl-carousel: $light-grey;
+$text-tile-owl-carousel-active: $capital-red;
+$text-tile-icon-size: $font16;
+$text-tile-link-text: $black;
+$text-tile-link-text-hover: $capital-red;
+$text-tile-container-background-invert: $white;
+//Component Free Text
+$free-text-container-background: $white-grey;
+//Component Primary Navigation
+$primary-nav-background: $dark-red;
+$primary-nav-title: $white;
+$primary-nav-main-link: $white;
+$primary-nav-main-link-active-border: $white;
+$primary-nav-main-child-hover-bg: $white-grey;
+$primary-nav-main-child-hover: $black;
+$primary-nav-main-child-icon: $white;
+$primary-nav-main-child-icon-hover: $dark-red;
+$primary-nav-child-background: $white;
+$primary-nav-child-link: $black;
+$primary-nav-child-link-hover: $white-grey;
+$primary-nav-child-drop-shadow: $black;
+//Component Download Listing
+$download-listing-border: $lighter-grey;
+$download-listing-link: $black;
+$download-listing-link-hover: $capital-red;
+$download-listing-link-icon: $black;
+$download-listing-link-icon-hover: $capital-red;
+$download-listing-caption: $dark-grey;
+$download-listing-scroll-bg: $white;
+$download-listing-scroll-thumb: $light-grey;
+//Component Page Title
+$page-title: $dark-grey;
+//Image V2
+$image-tile-brand-title-color: $white;
+$image-tile-click-icon-color: $white;
+$image-tile-click-icon-size: $font12;
+
+/* website varibles */
+
+$dark-brown: #694743;
+$opac-red: rgba(237, 201, 198, 0.25);
+$lighest-red: rgba(237, 201, 198, 0.15);
+$overlay: rgba(0, 0, 0, 0.8);
+$border-grey: #dedede;
+$tab-grey: #fdf7f7;
+$box-grey: #f7F8FA;
+$red-shadow: #6b4842;
+$acc-grey: #f5f5f5;
+$grey-light: #dddddd;
+$darkest-grey: #353535;
+$wb-green: #1f874c;
+$brownish-red: #f0ecec;
+$grey-mid: #4c4c4c;
+$foot-grey: #201e19;
+$header-pink: #d9908a;
+$web-grey: #d8d8d8;
+$highlight-red-clr: #bd2b2b;
+$darker-shade-capital: #ae000f;
+$panel-grad-1: rgba(255, 255, 255, 0);
+$panel-grad-2: rgba(179, 118, 113, 0.16);
+$dark-grey: #6c7174;
+
+/*application progress components*/
+
+$progress-bullet: $light-grey;
+$progress-bar: $light-grey;
+$progress-icon: $light-grey;
+$progress-text: $light-grey;
+$progress-bullet-active: $protecting-pallete-04;
+$progress-bar-active: $protecting-pallete-04;
+$progress-icon-active: $protecting-pallete-04;
+$progress-text-active: $protecting-pallete-04;
+$plan-info-bg: $opac-red;
+$progress-border: $black;
+
+/* award component */
+
+$award-title: $black;
+$award-desc: $black;
+$award-border: $white;
+
+/* birthday block component */
+
+$birthday-icon: $brand-support-yellow;
+$birthday-bg: $lighest-red;
+$birthday-shadow: $protecting-shade;
+
+/* chat bot component */
+
+$chat-btn-bg: $protecting-shade;
+$chat-btn-typ2-bg: $white-grey;
+$chat-btn-typ2-color: $protecting-shade;
+$chat-btn-lbl: $white;
+$chat-btn-icon: $white;
+$chat-mob-active: $white-grey;
+$chat-mob-active-color: $protecting-shade;
+$chat-overlay: $overlay;
+
+/* tabs component */
+
+$buy-plan-lbl: $protecting-pallete-04;
+$input-typ2-bg: $white;
+$input-typ2-plcholder: $light-grey;
+$addon-typ2-color: $black;
+$addon-typ2-disable: $light-grey;
+$addon-typ2-after: $light-grey;
+$input-grup-btn-typ2: $white;
+$input-grup-btn-bg: $protecting-shade;
+$input-grup-typ2-icon: $protecting-shade;
+$increment-border: $white-grey;
+$increment-icon: $protecting-shade;
+$amt-to-text: $brand-dark-grey;
+$form-control-increment: $black;
+
+/* header quick action and company info components */
+
+$company-color: $white;
+$quick-action-color: $protecting-shade;
+$quick-action-border: $white-grey;
+
+/* icon value component */
+
+$icon-value-color: $protecting-pallete-04;
+$icon-value-desc: $dark-grey;
+
+/* insurance card component */
+
+$ins-card-bg: $white;
+$ins-card-border: $light-grey;
+$ins-card-icon: $protecting-pallete-04;
+$ins-card-title: $black;
+$ins-card-count: $black;
+$ins-card-name: $black;
+$ins-link-item: $black;
+$ins-link-border: $white-grey;
+$ins-box-shadow: $red-shadow;
+$ins-plan-arrow: $protecting-shade;
+$ins-grad-top: $white;
+$ins-grad-bottom: $protecting-pallete-04;
+$ins-item-after: $capital-red;
+
+/* lead form component */
+
+$lead-title: $white;
+$lead-error: $white;
+$lead-gradient: $black;
+$lead-bg-color: $protecting-pallete-04;
+$lead-button-fill: $protecting-shade;
+$lead-text: $white;
+$lead-icon-bg: $protecting-pallete-01;
+$lead-placeholder: $light-grey;
+
+/* link list version 2 component */
+
+$link-v2-icon: $protecting-pallete-04;
+$link-v2-arrow: $protecting-shade;
+
+/* media block v2 component */
+
+$media-v2-icon: $protecting-shade;
+$media-v2-bg: $white;
+$media-v2-border: $border-grey;
+$liked-icon: $white;
+$nooflikes-icon: $dark-grey;
+$media-v2-grad: $black;
+$media-like-active: $capital-red;
+$media-list-v2-bg: $protecting-pallete-01;
+
+/* video block component */
+
+$video-icon: $white;
+$video-icon-hover: $capital-red;
+$video-title: $black;
+$video-title-hover: $capital-red;
+$video-close-icon: $white;
+$video-overlay: $overlay;
+$video-v2-bg: $tab-grey;
+
+/* tabs component */
+
+$tab-link: $protecting-shade;
+$tab-link-white: $white;
+$tab-link-bg: $tab-grey;
+$tab-link-protect: $protecting-shade;
+$tab-link-v2: $brand-light-grey;
+$tab-link-seperater: $brand-light-grey;
+$tab-title: $protecting-pallete-04;
+$tab-desc: $protecting-pallete-04;
+$tab-link-list: $grey;
+$tab-anchor-hover: $white;
+$tab-link-v3: $protecting-pallete-02;
+$tab-link-v3-active: $protecting-pallete-04;
+$feedback-tab-link-v2: $brand-light-grey;
+$feedback-tab-link-v2-bg: transparent;
+$feedback-tab-link-protect: $protecting-shade;
+$feedback-tab-link-border: $brand-light-grey;
+
+/* term products */
+
+$car-top-bg: $protecting-pallete-04;
+$term-card-title: $white;
+$card-tag-bg: $white;
+$card-tag-color: $protecting-pallete-04;
+$card-feature: $dark-grey;
+$card-icon-color: $protecting-pallete-04;
+$pro-card-border: $light-grey;
+$pro-card-shadow: $protecting-shade;
+
+/* slick dots and nav */
+
+$slick-arrow-bg: $protecting-shade;
+$slick-arrow-disabled: $light-grey;
+$slick-dot: $protecting-pallete-02;
+$slick-dot-active: $protecting-shade;
+$slick-icon: $white;
+
+/* selectize */
+
+$select-border: $white-grey;
+
+/* mcustscrollbar */
+
+$mcustombar-bg: $grey;
+$mcustombar-drag: $black;
+
+/* website button */
+
+$btn-brown-bg: $protecting-shade;
+$btn-brown-color: $white;
+$btn-brown-color-hover: $white;
+$btn-brown-hover-shadow: $light-grey;
+$btn-link-color: $protecting;
+$btn-link-hover-shadow: $light-grey;
+$btn-border-border: $protecting-pallete-04;
+$btn-border-color: $protecting-shade;
+
+/* global title-wrap */
+
+$sec-title-color: $black;
+$sec-desc-color: $black;
+$glob-ul: $black;
+
+/* website bredcrum */
+
+$breadcrum-link-color: $dark-grey;
+$breadcrum-active-color: $protecting-shade;
+
+/* category product banner */
+
+$cat-banner-desc: $black;
+$pro-btn-icon: $protecting-shade;
+$pro-banner-border: $white-grey;
+
+/* accordian */
+
+$acc-title: $black;
+$acc-content: $black;
+$acc-trigger-panel: $acc-grey;
+$acc-border: $grey-light;
+$acc-icon: $protecting-shade;
+$acc-trigger-panel-2: $white;
+$acc-trigger-panel-active: $white-grey;
+$acc-title-hover: $capital-red;
+$contact-acc-trigger-panel-2: $white;
+$contact-acc-trigger-panel-active: $white-grey;
+$contact-acc-icon: $protecting-shade;
+
+/* table */
+
+$table-text: $black;
+$table-border-color: $darkest-grey;
+
+/* faq filter */
+
+$filter-link-bg: $tab-grey;
+$filter-link-bg-active: $protecting-pallete-04;
+$filter-link: $protecting-pallete-02;
+$filter-link-active: $white;
+$filter-link-hover: $protecting-shade;
+$filter-drop-border: $light-grey;
+$filter-drop-shadow: $light-grey;
+$filter-drop-icon: $protecting-shade;
+$filter-drop-selected: $black;
+$filter-drop-list: $white;
+$filter-drop-item-active: $white-grey;
+$filter-placeholder: $dark-grey;
+
+/* star your journey */
+
+$start-journey-bg: $tab-grey;
+$qust-card-bg: $white;
+$qust-card-shadow: $protecting-shade;
+$qust-card-border: $light-grey;
+
+/*feedback */
+
+$input-note-color: $dark-grey;
+$success-pop-bg: $white;
+$success-pop-border: $light-grey;
+$success-pop-shadow: $protecting-shade;
+$success-icon: $wb-green;
+$file-icon: $protecting-shade;
+
+/* benifite eligibility */
+
+$benefit-icon: $protecting-pallete-04;
+$benefit-title: $black;
+$benefit-desc: $black;
+$benefit-border: $white-grey;
+
+/* info banner */
+
+$ib-title: $black;
+$ib-content: $black;
+$ib-icon: $protecting-pallete-04;
+$ib-btn-bg: $protecting-shade;
+$ib-btn-text: $white;
+$ib-bg: $tab-grey;
+
+/* tips */
+
+$tips-count: $protecting-pallete-04;
+$tips-title: $black;
+$tips-content: $black;
+$tips-border: $white-grey;
+
+/* info card */
+
+$ic-icon: $protecting-pallete-04;
+$ic-title: $black;
+$ic-info: $black;
+$ic-tile-bg: $white;
+$ic-box-shadow: $protecting-shade;
+$ic-border: $light-grey;
+$ic-bg: $tab-grey;
+
+/* illustration */
+
+$illus-bg: $white;
+$illus-border: $light-grey;
+$illus-box-shadow: $protecting-shade;
+$illus-link-color: $protecting;
+$illus-close: $white;
+$illus-overlay: $black;
+
+/* website footer */
+
+$wb-footer-bg: $foot-grey;
+$wb-footer-title: $light-grey;
+$wb-foot-border: $light-grey;
+$wb-foot-subtitle: $light-grey;
+$wb-foot-link-hover: $protecting;
+
+/* brief history */
+
+$history-bg: $tab-grey;
+$history-card-bg: $white;
+$history-card-border: $light-grey;
+$history-card-shadow: $protecting-shade;
+$history-card-icon: $protecting-shade;
+$history-card-brief: $black;
+$history-card-date: $dark-grey;
+
+/* our people */
+
+$profile-name: $black;
+$profile-designation: $black;
+$profile-desc: $black;
+$profile-overlay: $black;
+$profile-modal-bg: $white;
+$profile-modal-close: $protecting-shade;
+
+/* media mentions */
+
+$media-men-bg: $tab-grey;
+$media-men-icon: $protecting-shade;
+$media-men-name: $protecting-shade;
+$media-men-icon-wrap: $white-grey;
+$media-men-icon-shadow: $black;
+
+/* contact us */
+
+$contact-head: $white-grey;
+$contact-icon: $protecting-shade;
+$contact-text: $black;
+$contact-desc: $dark-grey;
+$contact-border: $white-grey;
+$contact-link: $protecting;
+
+/* icon card */
+
+$icon-card-border: $light-grey;
+$icon-card-shadow: $protecting-shade;
+$icon-card-name: $dark-grey;
+
+/* about us */
+
+$about-border: $white-grey;
+
+/* disclaimer */
+
+$disclaimer-info-clr: $dark-grey;
+
+/* buying guide nav */
+
+$bgnav-bg-color: $tab-grey;
+$bgnav-link-color: $protecting;
+$bgnav-link-bg-color: $protecting-shade;
+$bgnav-text-color: $black;
+$bgnav-link-color-active: $white-grey;
+
+/* why buy */
+
+$wb-bg-color: $tab-grey;
+
+/* website header ticker */
+
+$ticker-color: $black;
+
+/* website header */
+
+$wb-primary-nav-bg: $header-pink;
+$wb-primary-nav-bg: $header-pink;
+$wb-prime-nav-subtitle-shadow: $light-grey;
+$wb-primary-nav-li-bg: $header-pink;
+$wb-primary-nav-li-hover: $white;
+$wb-level1-bg-hover: $white;
+$wb-level1-color-hover: $dark-brown;
+$wb-ham-color: $white;
+$wb-mob-bg: $white;
+$wb-mob-nav-title: $black;
+$wb-mob-nav-link: $black;
+$wb-mob-nav-link-icon: $protecting-shade;
+$wb-mob-nav-link-hover: $white;
+$wb-mob-nav-link-border: $white-grey;
+$wb-mob-nav-link-bg: $header-pink;
+$wb-nav-go-back: $header-pink;
+$wb-nav-copyright: $dark-grey;
+$wb-nav-title-link: $header-pink;
+
+/* download-file */
+
+$df-total-text: $dark-grey;
+$df-bg-color: $white;
+$df-text-color: $black;
+$df-icon-color: $protecting-shade;
+$df-border-color: $white-grey;
+
+/* header yellow ticker */
+
+$marquee-text: $black;
+
+/*search*/
+
+$search-mice: $protecting-shade;
+$search-select-item: $black;
+$search-select-option: $black;
+$search-droplist-bg: $white;
+$search-droplist-highlight: $dark-grey;
+$search-droplist-highlight-clr: $white;
+$search-optgroup-bg: $acc-grey;
+$search-optgroup-clr: $dark-grey;
+$search-intgroup-border: $light-grey;
+$search-droplist-border: $light-grey;
+$search-droplist-shadow: $black;
+
+/* search results */
+
+$result-title-clr: $acc-grey;
+$result-item-clr: $black;
+$result-item-icon: $protecting-shade;
+$result-item-border: $white-grey;
+$result-icon-hover: $capital-red;
+$result-error: $capital-red;
+$result-title-mob: $dark-grey;
+
+/* article */
+
+$article-text-color: $black;
+$article-base-color: $dark-grey;
+$article-hover-color: $capital-red;
+$article-theme-primary-color: $protecting-shade;
+$article-theme-secondary-color: $protecting;
+$article-highlight-color: $protecting-pallete-01;
+$article-border-separator: $protecting-pallete-02;
+$article-highlighted-color: $light-grey;
+$article-pen-bg: $brownish-red;
+$article-bg-color: $white;
+$article-border-color: $white-grey;
+$article-mbg-color: $lighest-red;
+$article-social-hover: $capital-red;
+
+/* author */
+
+$author-text-color: $black;
+
+/* text highlighter */
+
+$highlited-text: $protecting-pallete-01;
+$highlight-tooltip-bg: $light-grey;
+$highlight-tooltip-bg-active: $brownish-red;
+$highlight-tooltip-bg-hover: $protecting;
+$highlight-tooltip-shadow: $black;
+$highlight-tooltip-border: $light-grey;
+$highlight-tooltip-clr: $protecting-shade;
+$highlight-clear-bg: $white;
+
+/* insurance filter */
+
+$if-text-color: $black;
+$if-disable-link: $light-grey;
+$if-link-hover: $capital-red;
+$if-link-active: $protecting-shade;
+$if-text-color: $black;
+$if-disable-link: $light-grey;
+$if-link-hover: $capital-red;
+$if-link-active: $protecting-shade;
+
+/* rate us */
+
+$rate-us-overlay: $black;
+$rate-us-modal: $white;
+$rate-us-text: $black;
+$rate-us-radio: $light-grey;
+$rate-us-radio-active: $black;
+$rate-us-close: $protecting-shade;
+$rate-us-slider-bg: $web-grey;
+$rate-us-row-bg: $tab-grey;
+
+/* sme scheme */
+
+$ss-text-color: $black;
+
+/* sme-scenario */
+
+$scenario-text-color: $black;
+
+/* msg */
+
+$msg-text-color: $black;
+
+/* our funds */
+
+$of-text-clr: $black;
+$of-count-text-color: $protecting-pallete-04;
+$of-border-color: $white-grey;
+$of-brand-clr: $protecting-shade;
+
+/* data value */
+
+$dv-label-clr: $dark-grey;
+$dv-value-clr: $black;
+
+/* assets allocation */
+
+$aa-label-clr: $dark-grey;
+$aa-text-clr: $black;
+$aa-cell-highlight-clr: $highlight-red-clr;
+$aa-border-clr: $darkest-grey;
+
+/* nav calc */
+
+$nc-label-clr: $dark-grey;
+$nc-count-clr: $protecting-pallete-04;
+$nc-label-clr: $dark-grey;
+$nc-count-clr: $protecting-pallete-04;
+
+/* know your funds */
+
+$kyf-text-clr: $black;
+$kyf-icon-color: $protecting-shade;
+$kyf-link-bg: $protecting-pallete-01;
+$kyf-link-hover-clr: $capital-red;
+
+/* group service link */
+
+$gsl-link-clr: $protecting;
+
+/* group solutions */
+
+$grp-solutions-desc: $black;
+$grp-solutions-item: $black;
+
+/* info text */
+
+$it-text-color: $black;
+
+/* rage slider house */
+
+$range-house-bar: #cccccc;
+$range-house-bar-active: #c21b24;
+$range-house-gradient-start: #ae000f;
+$range-house-gradient-end: #c7222a;
+$range-house-shadow: #7a1218;
+
+/* rage drag house */
+
+$range-drag-bar: #cccccc;
+$range-drag-gradient-start: #ae000f;
+$range-drag-gradient-end: #c7222a;
+$range-drag-shadow: #7a1218;
+$range-drag-tooltip: #da9089;
+$range-drag-handle: $white;
+
+/* range percent slider */
+
+$range-cent-bg: #f9eeed;
+$range-cent-gradient-start: #ae000f;
+$range-cent-gradient-end: #c7222a;
+$range-cent-shadow: #7a1218;
+$range-cent-mark: #d9908a;
+$range-cent-handle: $white;
+
+/* ruler range slider */
+
+$rrs-text-color: $header-pink;
+$rrs-pipe-color: $header-pink;
+$rrs-bg-color: $protecting-pallete-01;
+$rrs-tooltip-text-clr: $white;
+$rrs-gradient-top-color: $darker-shade-capital;
+$rrs-gradient-bottom-color: $capital-red;
+$rrs-text-clr: $black;
+$rrs-border-clr: $light-grey;
+$rrs-placeholder-clr: $acc-grey;
+$rrs-grey-text: $dark-grey;
+
+/* calc form */
+
+$cf-text-clr: $black;
+$cf-btn-link: $protecting;
+$cf-border-clr: $light-grey;
+$cf-footer-bg: $white;
+$cf-grey-text: $dark-grey;
+
+/* tab progress */
+
+$tp-link-clr: $light-grey;
+$tp-link-active-clr: $dark-grey;
+
+/* progress bar */
+
+$pb-back-bg: $white-grey;
+$pb-filled-bg: $capital-red;
+$pb-grey-text: $dark-grey;
+$pb-black-text: $black;
+
+/* icon radio */
+
+$ir-clr: $protecting;
+$ir-active-clr: $protecting-shade;
+$ir-card-bg: $white;
+$ir-border-clr: $light-grey;
+$ir-light-bg: $tab-grey;
+$ir-light-text-color: $protecting-pallete-01;
+$ir-btn-active-clr: $protecting-pallete-04;
+$ir-black-clr: $black;
+
+/* gender switch */
+
+$gender-switch-bg: $tab-grey;
+$gender-switch-lbl: #cdcdcd;
+$gender-switch-lbl-active: $protecting;
+$gender-switch-shadow: $protecting-shade;
+$gender-switch-icon: $protecting-shade;
+$gender-switch-indicator: $white;
+
+/* calc overlay */
+
+$calc-overlay: $black;
+$calc-modal: $white;
+$calc-modal-border: $light-grey;
+$calc-modal-shadow: $protecting-shade;
+$calc-text: $black;
+
+/*calc stepper */
+
+$calc-stepper-bg: $tab-grey;
+$calc-stepper-clr: #e2a7a2;
+$calc-stepper-active: $black;
+$calc-stepper-underline: $light-grey;
+$calc-stepper-lbl: $dark-grey;
+
+/* cs banner */
+
+$csb-text-clr: $black;
+$csb-hightlight-clr: $protecting-pallete-04;
+
+/* ad banner */
+
+$adb-text-clr: $black;
+
+/* card info */
+
+$ci-white-clr: $white;
+$ci-black-clr: $black;
+$ci-border-clr: $light-grey;
+
+/* link distribution */
+
+$ld-white-clr: $white;
+$ld-black-clr: $black;
+$ld-border-light-clr: $white-grey;
+$ld-icon-color: $protecting-pallete-04;
+$ld-link-arrow-clr: $protecting-shade;
+$ld-grad-top-clr: $panel-grad-1;
+$ld-grad-bottom-clr: $panel-grad-2;
+$ld-border-clr: $light-grey;
+
+/* calc result */
+
+$cr-black-clr: $black;
+$cr-light-brown-clr: $protecting-pallete-04;
+$cr-white-clr: $white;
+$cr-light-bg-clr: $tab-grey;
+$cr-link-clr: $protecting;
+$cr-icon-link-clr: $protecting-shade;
+$cr-border-clr: $light-grey;
+$cr-border-light-clr: $brownish-red;
+$cr-progress-bar-clr: $highlight-red-clr;
+
+/* website login n otp*/
+
+$wb-login-box-shadow: $protecting-shade;
+$wb-login-box-border: $light-grey;
+$wb-login-box-bg: $white;
+$wb-login-box-head-bg: #f0ece9;
+$wb-login-box-head-color: $dark-grey;
+
+/* income info */
+
+$ii-black-clr: $black;
+
+/* tax list */
+
+$itl-border-clr: $brownish-red;
+$itl-text-clr: $black;
+$itl-highlight-clr: $protecting-pallete-04;
+$itl-bg-clr:$tab-grey;
+
+/* language-switcher */
+
+$ls-text-clr:$black;
+$ls-icon-clr:$protecting-shade;

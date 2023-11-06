@@ -1,0 +1,236 @@
+.revamp-digicls {
+    &.faq-outerdiv,
+    &.revamp-varsity-module {
+      .hide1 {
+        display: none;
+      }
+  
+      .faq-show1 {
+        // font-family: $pfhandbookpro-bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 140%;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        color: $alphagrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  
+    &.faq-outerdiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  
+      @include for-tablet {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+  
+      .faq-last-margin {
+        margin-bottom: 49px !important;
+      }
+  
+      .faq-innerdiv {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        max-width: 119.6rem;
+        width: 119.6rem;
+  
+        .hide1 {
+          display: none;
+        }
+  
+        .faq-hide {
+          display: none;
+        }
+  
+        .faq-main1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding-bottom: 28px;
+          border-bottom: 1px solid $light-grey;
+  
+          .faq-heading {
+            // font-family: $pfhandbookpro-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 120%;
+            letter-spacing: -0.5px;
+            color: $alphagrey;
+          }
+  
+          .faq-txt {
+            // font-family: $pfhandbookpro-light;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            color: $planding-innertxt;
+            margin-bottom: 10px;
+          }
+        }
+  
+        .revamp-faqpanel-group {
+          width: 100% !important;
+  
+          .revamp-faqpanel-default {
+            display: none;
+            padding: 21.5px 0;
+            border-bottom: 1px solid $light-grey;
+  
+            &:nth-child(-n + 5) {
+              display: block;
+            }
+  
+            .revamp-faqpanel-heading {
+              padding: 0;
+              border: 0;
+            }
+  
+            .revamp-faqpanel-heading a:before {
+              -webkit-font-smoothing: antialiased;
+              content: $icon-plus;
+              font-family: "font-icons";
+              font-size: 16px;
+              float: right;
+              transition: all 0.5s;
+              line-height: 1;
+            }
+  
+            .revamp-faqpanel-heading.revamp-faqactive a:before {
+              content: $icon-minus;
+            }
+  
+            .revamp-faqpanel-heading.revamp-faqactive a {
+              margin-bottom: 18px;
+            }
+  
+            .revamp-faqpanel-heading.revamp-faqactive+.revamp-faqpanel-collapse>.revamp-faqpanel-txt {
+              margin-bottom: 22px;
+            }
+  
+            // .revamp-faqpanel-title>a {
+            //   margin-bottom: 20px;
+            // }
+  
+            .revamp-faqpanel-title>a,
+            .revamp-faqpanel-title>a:active {
+              display: block;
+              color: $planding-panel;
+              text-decoration: none;
+            //   font-family: $pfhandbookpro-bold;
+              font-style: normal;
+              font-weight: normal;
+              font-size: $font22;
+              line-height: 120%;
+              color: $alphagrey;
+            }
+  
+            // .revamp-faqpanel-txt ul {
+            //   list-style-image: url('../images/Ellipse-260.svg');
+            // }
+  
+            .revamp-faqpanel-txt ul {
+              li {
+                margin-bottom: 8px;
+  
+                @include for-phone {
+                  margin-bottom: 6px;
+                }
+              }
+            }
+  
+            .revamp-faqpanel-txt,
+            .revamp-faqpanel-txt p,
+            .revamp-faqpanel-txt ul li,
+            .revamp-faqpanel-txt ul li span {
+            //   font-family: $pfencoresanspro-normal;
+              font-style: normal;
+              font-weight: normal;
+              font-size: $font20;
+              line-height: 140%;
+              color: $planding-innertxt  !important;
+  
+              @include for-phone {
+                font-size: $font18;
+              }
+            }
+          }
+        }
+      }
+  
+      .faq-btn1 {
+        border: 1px solid $capital-red;
+        border-radius: 12px;
+        // font-family: $pfhandbookpro-bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 13.5px 25px;
+        color: $capital-red;
+      }
+    }
+  }
+  
+  /* new impl*/
+  
+  
+  @media screen and (max-width: $xs) {
+    .revamp-digicls {
+      .faq-last-margin {
+        margin-bottom: 39px !important;
+      }
+  
+      .faq-innerdiv {
+        width: 100% !important;
+      }
+  
+      .faq-main1 {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+  
+        .faq-heading {
+          margin-bottom: 8px !important;
+          line-height: 120%;
+          font-size: 22px !important;
+        }
+  
+        .faq-txt {
+          font-size: 20px !important;
+          margin-bottom: 6px !important;
+          text-align: left !important;
+        }
+      }
+  
+      .revamp-faqpanel-title>a {
+        margin-bottom: 17px !important;
+        font-size: $font18  !important;
+      }
+  
+      .revamp-faqpanel-heading.revamp-faqactive a {
+        margin-bottom: 8px !important;
+      }
+  
+      .revamp-faqpanel-heading.revamp-faqactive+.revamp-faqpanel-collapse>.revamp-faqpanel-txt {
+        margin-bottom: 20px !important;
+      }
+    }
+  }
